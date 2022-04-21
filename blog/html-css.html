@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html-css</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+   <div><h1>Research task: CSS Constructs</h1>
+    <h1>Classes vs IDs</h1>
+    <h2>What are they?</h2>
+    <p>HTML and CSS are two languages that are used to create content for websites and to style them respectively. HTML could be thought of as the nouns of a webpage -holds the core meaning and CSS could be viewed as adjectives - are descriptive and alters the nouns. In this analogy it is important to know which "nouns"/HTML elements the "adjectives"/CSS styles are altering. This can be done through the use of selectors. Classes and IDs are both CSS simple selectors, that is, they are attributes used to mark and then change/style groups of HTML elements. CSS selectors conform to a pattern of specificity. For example multiple classes can be assigned to a single element, if these classes conflict the output will default to the last relevant class entry in the CSS information. The class ordering within the HTML element has no effect on which attribute is used. ie
+    </p>
+    <p class="pink-text">HTML entry</p>
+      <pre><code>&lt;p class= "pink-text grey-text">HTML entry&lt;/p&gt;</code></pre>
+      
+      <p>CSS entry <pre><code>.grey-text {color: gray;} .pink-text {color: pink;}</code></pre></p>
+
+    <p>An ID selector will override a class attribution as there is more importance placed on this demacation.</p>
+      
+    <p id="id-example">HTML entry</p>
+      <pre><code>&lt;p class= "pink-text grey-text" id="special-green">HTML entry&lt;/p&gt;</code></pre>
+      
+      <p>CSS entry <pre><code>#special-green {color: green;} .grey-text {color: gray;} .pink-text {color: pink;}</code></pre></p>
+
+      Below is a visual representation of CSS styling order (see the orange and red section)</p>
+    <img class="larger-image" src="/Users/victoria/devacademy/victoria-marchant.github.io/victoria-marchant.github.io/Images/definitive-guide-to-css-styling-order.png">
+    <p>Image taken from <a target="_blank" href="https://css-tricks.com/the-c-in-css-the-cascade/"> https://css-tricks.com/the-c-in-css-the-cascade/ </a> page authored by Thomas Yip (2018)</p>
+    </div>
+      <div><h2>What are the differences?</h2>
+
+      <table class="center" border="1" cellpadding="10">
+      <thead>
+          <tr>
+              <th class="grey-text" colspan="2">Key differences</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Class</td>
+              <td>IDs</td>
+          </tr>
+          <tr><td>CSS structure <strong>.</Strong> <pre><code>.(class-name) {property: value;} </code></pre></td>
+          <td>CSS structure <strong>#</strong> <pre><code>#(ID-name) {property: value;}</code></pre></td></tr>
+          <td> Used to apply styling to <strong>multiple</strong> elements 
+            (I want to make changes to all of these cool cats 🐈‍⬛🐱🦁🐈 so I should think about using a class)</td>
+          <td>Used to apply styling to a <strong>single</strong> element 
+            (I want to make changes to this one really, really cool cat 🐈 so I should think about using an ID)</td>
+          <tr>
+<td>Specificity is class&lt;ID </td>
+<td>Specificity is ID&gt;class</td>
+          </tr>
+          <tr><td>I've used many on this page</td>
+          <td>I've used two on this page, can you find them?</td></tr>
+      </tbody>
+  </table>
+  </div>
+  <div>
+  <h2>When do I use them and what happens if I use the wrong one?</h2>
+
+    <p>To recap, you can use CSS classes when you want to repeat styling across multiple elements in a single site/page. Whereas you use an element when you want to apply a specific style to a single element. 
+      So what happens if you use id as you would a class - well, it seems that much like using your friends ID sometimes you may get away with it (not advised) but in certain circumstances when it comes to validation, maintenance or adding JS you may run into issues. It is definitly not considered good pracitice to have multple elements sharing IDs!
+    </p>
+    
+<p>That sums up my interesting investigation into IDs and Classes...<a target="_blank" href="https://www.w3schools.com/css/css_selectors.asp"> here</a> is a link to some more information on CSS selectors if you were a bit confused by my explaination (I know I was). </p>
+  </div>
+    <h3 id="end-tag">Had enough? Fair enough! click <a href="../index.html">here</a> to get back to the main page</h3>
+    <!-- this is a comment. -->
+  
+  </body>
+</html>
