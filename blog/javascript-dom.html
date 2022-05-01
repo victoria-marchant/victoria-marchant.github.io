@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Fundamentals</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header><h1>JavaScript Fundamentals</h1></header>
+    <img class = "larger-image" src="../Images/languages.png" alt="HTML, CSS, JS = website">
+    <main>
+      <h2>JavaScript and Its relationship to HTML and CSS</h2>
+        <p>If we think about HTML as the bones of a website and CSS as the clothes it wears/how it presents, then we can think of JavaScript as the nervous system of the website rolling out movement and function. The can also be thought of as the verbs in a sentence – the words that create the action. </p>
+
+        <h2>Control Flow and Loops</h2>
+<p>Control flow is the sequence or order in which the computer goes through and executes code. Code is generally run from line one to the last line of the file. Exceptions to this are created via functions/operations that change this flow. This is an extremely common occurrence and two such examples would be conditionals and loops.</p>
+
+<p>A real life example might be getting in the car to drive from A to B. so you start the ignition get into gear and remove the handbrake go to take of but you run into an ‘if conditional’ that says that if the petrol indicator is on red you need to detour to a petrol station (which alters the flow of the original journey). After the petrol station you are back on route but you just have to pull over to do full justice to a song you’re listening to. You ‘loop’ through on repeat five times to let the song truly sink in and then your back into the flow again. Finally you are at destination B, into park, pull the handbrake, turn off the ignition and you’re done. 
+</p>
+
+        <h2>What The DOM?</h2>
+
+        <p>DOM stands for ‘Document Object Model’ when a document (such as an HTML file) is rendered through a browser the elements are organised into a hierarchy  that take the form of a tree structure with one parent per branch– the DOM tree. The topmost node/parent for the page is the document. 
+          This object/element representation can act as an interface between the JavaScript and the HTML being represented. This allows JavaScript to make changes to HTML elements and attributes, to change CSS styling, to create new and react to existing events. Leading to dynamic web pages.
+           </p>
+
+
+        <h2>Accessing Data, Arrays vs Objects</h2>
+
+        <p>Objects and arrays are both ways of storing data.
+          Objects store data as key value pairs 
+          <P><code>const obj = {
+             name: “Banana”,
+             age: 26,
+             phone: 333999}</code></P>
+          where name, age, phone are the keys and Banana, 26, and 333999 are the values assigned to those keys. 
+          You can search the information/data within an object variable by using the keys. 
+          Eg console.log(obj[“name”]) would yield “Banana”
+          
+          Arrays store data as ordered collections of comma separated values.
+          An Array takes the form:
+          <p><code>const arr = [“Banana”, “Orange”, “Pear];</code></p>
+          
+          Arrays can be accessed by indexes, it is important to note that these start at point 0 rather than one so the first value in the collection will occur at 0.
+          EG console.log(arr[0]) would yield “Banana”
+          </p>
+
+
+        <h2>What Are Function and Why Are They Helpful?</h2>
+
+        <p>Functions as the name implies carry out functions in JavaScript which allows actions and calculations etc to occur. This is extremely helpful as it means that websites can be carry out work and be responsive.
+          Functions take the form, keyword function followed by the name of the function followed by () – the functions parameters followed by {}. Ie </p><code>function myFunction() {      }</code></p>
+          Functions need to be called/ invoked in order to get the function to work. This is done by writing the function name followed by () – houses the functions arguments (values passed to the function when it is invoked.)</p>
+
+      </main>
+ <footer>
+  <h3 id="end-tag">Had Enough? Fair Enough! Click <a href="../index.html">Here</a> to Get Back to the Main Page</h3>
+   </footer>
+  </body>
+</html>

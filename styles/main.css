@@ -1,6 +1,7 @@
 body
 {text-align: center;
-  background-color: transparent;}
+  background-color: rgba(113, 113, 113, 0.197);
+  font-family: 'Kanit', sans-serif;}
 
 h1,h2,h3 {color:#696969;}
 
