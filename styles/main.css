@@ -44,6 +44,11 @@ font-size: 17px;
 #end-tag {color: #4682B4}
 #foot-note {font-size: smaller;}
 
+#games {
+  list-style-type: none;
+  text-align: center;
+}
+
 .exampleone { background-color: transparent; }
 
 @media screen and (max-width: 600px) {
